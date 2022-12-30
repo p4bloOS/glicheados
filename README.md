@@ -1,3 +1,5 @@
+*** Desgraciadamente GitHub no permite subir la carpeta DataSets porque los archivos pesan más de 25MB, por lo cual no todos los scripts se pueden ejecutar sin errores. El proyecto original que hicimos en la hackathon se encuentra en un repositorio privado de GitLab. ***
+
 Proyecto para la Hackaton ZDMP
 
 Lunes, 19 de diciembre

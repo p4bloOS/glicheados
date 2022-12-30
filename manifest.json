@@ -1,0 +1,56 @@
+{
+    "name": "Arbol de regresión",
+    "description": "Los árboles de decisiones tienen dos componentes principales: la declaración del problema (representada por la raíz del árbol) y un conjunto de consecuencias o soluciones (representadas por las ramas del árbol).",
+    "tags": ["hackathon", "iti"],
+    "input": {
+		"prediction": [
+			{
+				"type": "MESSAGE_BUS",
+				"payload": {
+					"routingKeys": 
+					[
+						{
+							"name":"iti.datathon.input"
+
+						}
+					]
+				}
+			}
+		]
+    },
+    "output": {
+		"prediction": [
+			{
+				"type": "MESSAGE_BUS",
+				"payload": {
+					"routingKeys": 
+					[
+						{
+							"name":"iti.datathon.glicheados.output"
+						}
+					]
+				}
+			}
+		]
+    },
+    "modelData": {
+        "type": "PYTHON",
+        "payload": {
+			"dependencies": [
+				{
+					"name":"pandas",
+					"version":"1.5.1"
+				 },
+				 {
+					 "name":"scikit-learn",
+					 "version":"1.1.3"
+				 },
+				 {
+					 "name":"numpy",
+					 "version":"1.23.4"
+				 }
+			 ],
+			 "modelFile": "modelo1.pkl"
+        }
+    }
+}
